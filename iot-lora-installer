@@ -123,6 +123,8 @@ if(modelUsed == "Rockchip"):
     platform = "iotloragw_tnk"
 if(modelUsed == "ODROID-C2\x00"):
     platform = "iotloragw_odc2"
+if(modelUsed == "Libre"):
+    platform = "iotloragw_tri"
 
 os.system("sed -i -e 's/PLATFORM= .*$/PLATFORM= %s/g' library.cfg" % platform)
 
