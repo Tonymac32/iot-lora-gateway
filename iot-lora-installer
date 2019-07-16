@@ -207,6 +207,9 @@ if(modelUsed == "Rockchip"):
 if(modelUsed == "ODRID-C2"):
     os.system("cp %s/iot-lora-gateway/template_configs/start-odroidc2.sh "
               "%s/iot-lora-gateway-reset.sh" % (compilation_dir, base_dir))
+if(modelUsed == "Libre"):
+    os.system("cp %s/iot-lora-gateway/template_configs/start-libre.sh "
+              "%s/iot-lora-gateway-reset.sh" % (compilation_dir, base_dir))
 
 # if raspberry Pi enable the SPI bus and set the core clock to 250mhz
 if(modelUsed == "Raspberry"):
